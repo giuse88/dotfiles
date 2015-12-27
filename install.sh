@@ -5,5 +5,5 @@ FILES=`ls -I Readme.md -I install.sh`
 
 for f in $FILES
 do
-  ln -sf ./$f ~/.$f && echo "Installed file $f in ~/.$f"
+  ln -sf `pwd`/$f ~/.$f && echo "Installed file $f in ~/.$f"
 done
